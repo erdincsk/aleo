@@ -1,9 +1,7 @@
 #!/bin/bash
 
 cd
-sudo apt-get install libssl-dev -y
-sudo apt-get install pkg-config -y
-sudo apt-get install libclang-dev -y
+sudo apt-get install libssl-dev pkg-config libclang-dev -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #gelen pencerede 1'e bas
@@ -11,8 +9,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #kurulum sonrası terminali yeniden başlat ya da yeni terminal aç
 
 git clone https://github.com/aleoHQ/aleo-setup
-cd ~/aleo-setup
-cargo clean && cargo build --release
+cd ~/aleo-setup && cargo clean && cargo build --release
 cargo run --release --bin setup1-contributor -- generate --keys-path keys.json
 #şifre tanımla
 
