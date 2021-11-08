@@ -16,6 +16,7 @@ cargo run --release --bin setup1-contributor -- generate --keys-path keys.json
 #bundan sonraki işlemleri mutlaka yeni bir screen'de yapın. !!!!
 
 screen -S aleo-c
+cd ~/aleo-setup
 cargo run --release --bin setup1-contributor -- contribute --api-url https://inner-ceremony.aleo.org --keys-path keys.json
 #tanımladıgın şifreyi gir
 #sizi sıraya alacak kaçıncı sırada oldugunuz gözükecek
