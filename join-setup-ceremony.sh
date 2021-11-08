@@ -16,7 +16,7 @@ cargo clean && cargo build --release
 cargo run --release --bin setup1-contributor -- generate --keys-path keys.json
 #şifre tanımla
 
-#bundan sonraki işlemleri mutlaka yeni bir screen'de işlemleri yapın. !!!!
+#bundan sonraki işlemleri mutlaka yeni bir screen'de yapın. !!!!
 
 screen -S aleo-c
 cargo run --release --bin setup1-contributor -- contribute --api-url https://inner-ceremony.aleo.org --keys-path keys.json
