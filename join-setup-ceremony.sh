@@ -6,7 +6,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #gelen pencerede 1'e bas
 
-#kurulum sonrası terminali yeniden başlat ya da yeni terminal aç
+#kurulum sonrası terminali yeniden başlat ya da yeni terminal aç. ardından aşağıdaki git clone komutu ile devam et.
 
 git clone https://github.com/aleoHQ/aleo-setup
 cd ~/aleo-setup && cargo clean && cargo build --release
